@@ -11,7 +11,7 @@ index a1debc5..f40f8e5 100644
 +        // been reviewed
 +        //
 +        // NOTE: There will be an uncaught exception if this happens...
-+        if (trim($field, 'A..Za..z0..9_') !== '') {
++        if (trim($field, 'A..Za..z0..9_.') !== '') {
 +            // Ruh-roh, we didn't catch this one..
 +            Mage::log($field, null, 'appsec-1063.log', true);
 +            Mage::log(json_encode($condition), null, 'appsec-1063.log', true);
